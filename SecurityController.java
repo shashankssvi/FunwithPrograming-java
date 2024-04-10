@@ -16,6 +16,7 @@ public class SecurityController {
 	@GetMapping("/api/binarysearch/{num}")
 	public int gbsn(@PathVariable int num) {
 		int[] arr1 = {4,2,7,19,14,12,1,9,3,10,32,12};
+		Arrays.sort(arr1);
 		return Arrays.binarySearch(arr1, num);
 	}
 }
